@@ -24,7 +24,7 @@ lint = [
 
 [tool.black]
 # Максимальная длина строки
-line-lenght = 119
+line-length = 119
 # Файлы, которые не нужно форматировать
 exclude = '''
 (
@@ -42,7 +42,7 @@ exclude = '''
 
 [tool.isort]
 # Максимальная длина строки
-line-lenght = 119
+line_length = 119
 # Импорты будут объединены в одну строку, если возможно
 multi_line_output = 3
 

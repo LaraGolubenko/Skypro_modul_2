@@ -1,4 +1,4 @@
-def get_mask_card_number(number: int) -> str:
+def get_mask_card_number(number: int | str) -> str:
     """Преобразует номер банковской карты в формат XXXX XX** **** XXXX"""
     mask_card_1 = ""
     mask_card_2 = []
@@ -13,7 +13,7 @@ def get_mask_card_number(number: int) -> str:
     return " ".join(mask_card_2)
 
 
-def get_mask_account(number: int) -> str:
+def get_mask_account(number: int | str) -> str:
     """Преобразует номер банковского счета в формат **XXXX"""
     conv_str = str(number)
     mask_account = "**" + conv_str[-4:]
